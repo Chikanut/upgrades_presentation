@@ -645,7 +645,7 @@ body.panel-resizing .editor-resize { background: rgba(201,161,74,0.5); }
   .title-main { font-size: var(--fs-base); }
   .title-sub { display: none; }
   /* Schema: panzoom handles navigation, stage sized by JS */
-  .schema-wrap { padding: 0; overflow: hidden; flex: none; width: 100%; aspect-ratio: 16/9; }
+  .schema-wrap { padding: 0; overflow: hidden; }
   /* Compare: height driven by image aspect-ratio, info scrolls below */
   .compare-stage { padding: 6px 6px 0; }
   .compare-wrap { overflow-y: auto; }
