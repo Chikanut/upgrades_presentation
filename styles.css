@@ -645,7 +645,7 @@ body.panel-resizing .editor-resize { background: rgba(201,161,74,0.5); }
   .title-main { font-size: var(--fs-base); }
   .title-sub { display: none; }
   /* Schema: panzoom handles navigation, stage sized by JS */
-  .schema-wrap { padding: 0; overflow: hidden; }
+  .schema-wrap { padding: 0; overflow: hidden; flex: none; width: 100%; aspect-ratio: 16/9; }
   /* Compare: height driven by image aspect-ratio, info scrolls below */
   .compare-stage { padding: 6px 6px 0; }
   .compare-wrap { overflow-y: auto; }
@@ -660,7 +660,7 @@ body.panel-resizing .editor-resize { background: rgba(201,161,74,0.5); }
   .btn-icon { padding: 5px; width: 28px; height: 28px; }
   .modal { max-height: 95vh; }
   /* Smaller markers on mobile */
-  .marker { --marker-size-mobile: 34px; }
+  .marker { --marker-size-mobile: 24px; }
 }
 @media (max-width: 420px) {
   .summary-grid { grid-template-columns: 1fr; }

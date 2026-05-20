@@ -764,7 +764,7 @@ function ViewerApp() {
     onClick: openPoint
   })), /*#__PURE__*/React.createElement("div", {
     className: "schema-meta"
-  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, "\u0421\u0415\u041A\u0422\u041E\u0420"), " \xB7 ", P.schemaSector || 'A-01'), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, date))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, "\u0421\u0415\u041A\u0422\u041E\u0420"), " \xB7 ", P.schemaSector || 'Обкатка танком'), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, date))), /*#__PURE__*/React.createElement("div", {
     className: "schema-corner tl"
   }), /*#__PURE__*/React.createElement("div", {
     className: "schema-corner tr"
