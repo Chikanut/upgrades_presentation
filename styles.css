@@ -660,7 +660,7 @@ body.panel-resizing .editor-resize { background: rgba(201,161,74,0.5); }
   .btn-icon { padding: 5px; width: 28px; height: 28px; }
   .modal { max-height: 95vh; }
   /* Smaller markers on mobile */
-  .marker { --marker-size-mobile: 24px; }
+  .marker { --marker-size-mobile: 34px; }
 }
 @media (max-width: 420px) {
   .summary-grid { grid-template-columns: 1fr; }
