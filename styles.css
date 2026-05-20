@@ -669,4 +669,9 @@ body.panel-resizing .editor-resize { background: rgba(201,161,74,0.5); }
   .marker .label { display: none; }
   .marker.touched .label { display: block; opacity: 1; }
 }
+
+/* ─── Portrait orientation: image fills full width, desc scrolls below ── */
+@media (orientation: portrait) {
+  .schema-wrap { overflow-y: auto; align-items: flex-start; }
+}
   

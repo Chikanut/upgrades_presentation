@@ -416,17 +416,23 @@ function ViewerApp() {
     } = el.getBoundingClientRect();
     if (!w || !h) return;
     const pad = 20,
-      descH = descRef.current ? descRef.current.offsetHeight : 100;
-    const avW = w - pad * 2,
-      avH = h - pad * 2 - descH,
-      capH = Math.min(avH, 900);
+      avW = w - pad * 2,
+      isPortrait = w < h;
     let sw, sh;
-    if (avW / capH >= imgAspect) {
-      sh = capH;
-      sw = sh * imgAspect;
-    } else {
+    if (isPortrait) {
       sw = avW;
       sh = sw / imgAspect;
+    } else {
+      const descH = descRef.current ? descRef.current.offsetHeight : 100;
+      const avH = h - pad * 2 - descH,
+        capH = Math.min(avH, 900);
+      if (avW / capH >= imgAspect) {
+        sh = capH;
+        sw = sh * imgAspect;
+      } else {
+        sw = avW;
+        sh = sw / imgAspect;
+      }
     }
     setStageDims({
       width: Math.round(sw) + 'px',
