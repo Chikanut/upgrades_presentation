@@ -764,7 +764,7 @@ function ViewerApp() {
     onClick: openPoint
   })), /*#__PURE__*/React.createElement("div", {
     className: "schema-meta"
-  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, "\u0421\u0415\u041A\u0422\u041E\u0420"), " \xB7 ", P.schemaSector || 'Обкатка танком'), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, date))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, "\u0421\u0415\u041A\u0422\u041E\u0420"), " \xB7 ", P.schemaSector || 'A-01'), /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("b", null, date))), /*#__PURE__*/React.createElement("div", {
     className: "schema-corner tl"
   }), /*#__PURE__*/React.createElement("div", {
     className: "schema-corner tr"
@@ -843,7 +843,15 @@ function ViewerApp() {
     ref: descRef
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
     className: "eyebrow"
-  }, "\u041F\u0440\u043E \u043F\u0440\u043E\u0454\u043A\u0442"), /*#__PURE__*/React.createElement("p", null, P.projectDescription || '')), /*#__PURE__*/React.createElement("div", {
+  }, "\u041F\u0440\u043E \u043F\u0440\u043E\u0454\u043A\u0442"), /*#__PURE__*/React.createElement("p", null, P.projectDescription || ''), P.projectAuthors && /*#__PURE__*/React.createElement("p", {
+    style: {
+      marginTop: 2,
+      fontSize: 'var(--fs-xs)',
+      fontFamily: 'var(--mono)',
+      letterSpacing: '0.06em',
+      color: 'var(--text-3)'
+    }
+  }, "\u21B3 ", P.projectAuthors)), /*#__PURE__*/React.createElement("div", {
     className: "schema-desc-stats"
   }, /*#__PURE__*/React.createElement("div", {
     className: "schema-desc-stat"
